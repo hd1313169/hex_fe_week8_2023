@@ -1,3 +1,14 @@
-.index-title {
-  font-size: 100px;
+.banner{
+
+  @include large{
+    &-subtitle{
+      letter-spacing: 16px;
+    }
+  }
+
+}
+.bg-banner{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true);
+  width: 100%;
+  height: 100vh;
 }
