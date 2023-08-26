@@ -1,0 +1,76 @@
+// font
+// fs
+@include large {
+    h2 {
+        font-size: 48px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    h4 {
+        font-size: 32px !important;
+    }
+}
+
+// style
+.title-display {
+    font-family: "Shrikhand" !important;
+}
+
+// background
+// gradient
+.bg-linear-top {
+    @include gd-linear(0deg);
+}
+
+.bg-linear-left {
+    @include gd-linear(90deg);
+}
+
+.bg-linear-right {
+    @include gd-linear(270deg);
+}
+
+.bg-radial-inner {
+    @include gd-radial($secondary-dark, $dark);
+}
+
+.bg-radial-outer {
+    @include gd-radial($dark, $secondary-dark);
+}
+
+
+
+
+
+.divide {
+    display: block;
+    background: $white;
+    width: 100%;
+    height: 1px;
+    margin: 16px 0;
+
+    @include large {
+        display: none;
+    }
+}
+
+
+.link-hover {
+    @include hover ($primary, transparent);
+}
+
+.d-lg-block{
+    display: none;
+    @include large{
+        display: block;
+    }
+}
+.d-lg-none{
+    display: block;
+    @include large{
+        display: none;
+    }
+}

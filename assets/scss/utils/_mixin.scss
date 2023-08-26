@@ -1,0 +1,35 @@
+// break point
+@mixin large{
+    @media(min-width: 992px) {
+        @content;
+      }
+}
+
+@mixin medium{
+    @media(min-width: 768px) {
+        @content;
+      }
+}
+
+@mixin small{
+    @media(min-width: 576px) {
+        @content;
+      }
+}
+
+// gradient
+@mixin gd-linear($deg) {
+    background: linear-gradient($deg, $secondary, $primary);
+}
+
+@mixin gd-radial($inner, $outer) {
+    background: radial-gradient(circle, $inner, $outer);
+}
+
+// hover
+@mixin hover ($text, $background){
+    &:hover{
+        color: $text !important;
+        background-color: $background;
+    }
+}

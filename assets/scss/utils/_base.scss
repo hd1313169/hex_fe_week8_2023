@@ -1,0 +1,35 @@
+li{
+  list-style: none !important;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+// sizing
+.w-33 {
+  width: 33.333% !important;
+}
+
+.w-66 {
+  width: 66.666% !important;
+}
+
+// letter-spacing
+.letter-16{
+  letter-spacing: 16px;
+}
+.letter-20{
+  letter-spacing: 20px;
+}
+.letter-48{
+  letter-spacing: 48px;
+}
+.letter-80{
+  letter-spacing: 80px;
+}
