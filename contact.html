@@ -1,19 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
-    <script type="module" crossorigin src="/hex_fe_week8_2023/assets/main-71c30259.js"></script>
-    <link rel="stylesheet" href="/hex_fe_week8_2023/assets/main-accf464b.css">
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALPHABOX+ | AI 虛擬陪伴</title>
+  <link rel="shortcut icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAKR0lEQVR4nO2dXWwdRxXHf3Hcm9S5GCtcWcVExg2VE1ASQkJDBSFtAFEapVJVQApFQISoKh6QkBCvjfrEE+IB9QGQaPMAVBSkgC0EqKWfcVvyQUhLIG6bGGjdkl5c4xoncRKXh/8O6zj+uDd3Znfu3fOTRnZsZ3d2979nzjlzZi4YhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmE0D98B/g683WA7nRyrJWnLuwNGvpgACo4JoOCYAAqOCaDgmAAKjgmg4JgACo4JoOCYAAqOCaDgmAAKjgmg4JgACo4JoOC0Z3SefuCjwFZgAvgRUAUmMzp/7JSBCrAPKKH7MwyMhj5xVgKooIe/HrgI7CG9wBeSn53LqC+x0I4s8AZgDfAB9KK0ATvRi9IyAugFdgM9SOGfAR5BD/91ZAmKJoBS0nYDNyZfAaaB64C/AkdDdyILAdwF3Iwe/uzzbQM2IeWfAB4FngbGM+hTnqxGL8DN6NrXAh2zft+O7tVtQCfww5CdCSkAZ+I2IgtQmvP7zqRtSP52ImmvI9M3nbRWwL3tFfRwtwKbkQDKc/62LfnbPmAK3ZuZpDUVFXQRp4E3qK0A81XgMeAWdKMaIaai0B50TT8BDtV43v8CbwJdXG4hvBLSAjjzXqnjPF3IEfoWGv9eBn6D/INmixjKwErgc8B7kaVbj66xFkrovu1GDvMfA/QxqAB6kXMz18QtRkfSetBY2Qs8mfyu2QSwEl37rcgSbq7z/7tnsxUNhUEEEAI3fv2Mxs2va4eAe6lvWMhjCCgjC3Yv8BQy4T6ufwANIfW8TDURwgJ0Ap9Gsa0vupE1qQKvAH8DzhBPxNCF+rgZXfeNKJSb6/heLRVgC4qWvFrCEALoBr6OXwH0Jm0LMIIyZUPEI4BulOm8G1m/Rh3YufQCtwODSPje8C2AHegt6Mef+mdTQRZmHwoVx4B7ULiUtRh60YO/mzSTVyHsde9Ivh72dWDfAlgLrCNc2OLi6TIyu1PIKowhQVQJmz9wMfp16IGvSc7fjQQRCnfd69AQcAxPuQHfAvgsuiFZ0JW0ARQmDaGhYYRwOfQOZOK/DdyELF2W3IWE91sk/oaFvrzRAyT0Ah8H7kTj3zWejlsry1HY2Ifi7RKwPenXOxs89jjKUE4DXwR2AR9Bb/3KBo9dL8vRW/9P0kRRQ/iyAM5LrRAwa7UIzhr0oLf/P0lffOGuzwncezhWIx1I6BuRpTuVUz+uoB/YCxxE6Vxf8b+1y5vPVDngbwi4BpmmsyhOP5v8vJ0wXnGRmAb+BfwFzZg+BxxBQ1PDU+jLGj3APFRQ/vp2ZDb7ApyjSIyjeZEB4Kd4zgOEEEA7Go97kRi+kXy/KcC5WpnDwEvA/aTT5GOoesobvoaA2cygEOUs8lLfg0yVO9fb2LCwEFPAW2j+4RDwPMr+vYEc26arCXCU0VBwP/AE+TtTsbYjqGZgM36jmAUJYQEW4jwav15ESr+EnMc8wsaYqKLM3sPAL9Es4oso4+fV3M9HVkWhLj07hLJ2bq58NRkpPWIm0T0ZQON+pnUPIZzAerkPZe8+gUSRlSjz4iJ6yH9AVdHfQy/HVB6dyXIIWIgyCnXGkSAv0Hj6Nlb+gcrcfg88i0q/X0KiuJRHh2KwAJCujLkHWYPdi/950zKIxvvv4mkyp1FiEUAbMv1u3vsG4EtoQsd3cUXWHEUVTE+gt76KnOEoSr1jGAJAIdAlFANPoJj3XcAKlDOYRhHDMuIR7WJcREmbM2h+5BhK4Z5Mfj6Drtmogb3A91Fy5Dz5x+pLtQsoAfaDpO9RE4sFWIwp5Dy9kHw/Qdjqm6vBLW59Jmk/Bh5HRZz/zq9bS9MMIdcwmvs+jvIH55BvEBMzaJg6gdK3DxGJk7cUzSCA2bgbPY4yiLHMKbiavTbS/jUFzSCAflSEeQPwMVSI6W52bKxHVmoSDVtVZMGipRk86r1oedTs/QViZhqVpQ2iyZ0Hc+3NEsQogA5U+bodeD9aZdSBagzckvOYmUFO4TjyA4ZQCPgL0rL1aIglCmhDfelG9QPbUNn1RiSGVcnvYxTsXJahvq5Col2BROHWCZa4PJzNlVhuaAm95V8DPoTq31uRQRTNRLNJVgxO4KdQsYjbNaOVp4c3IYe2E/gTchQfybNDMQhgA6mT1+rTwb1IAG79RCc5CyAPyqiu/QGU3s07dZt3O432UriD2ncP8UZWTmAJuBYtod6C9sH7IPBurCTMlX2tQhNinWgyDDKoEcjK3Lodsr6CTP6HMzpvM1BJ2jaU5DqOZhEzCRlDRgErkcD2oHj+JpTNK2Nv/UK41T5VVDLm5hWC7aQaYghoR8Wea9DuWLtQLL8FlXrFnsnLE1cs241yBSvQgpBrkb8wjeciElsaFj8jpEvDBpF18IYvAbhNkrYD1ydf+5AY8lpK3SpMooc+gvyDl9EaQS/7K/tyAt3efp9Es3fm5PmjTLqyqh8VxvwaTz6BLx9gHdoQ8c7k+zwZRbX2F5DAfewQchyt2rkehWt58Q5Sf8Dti9QQvizAGPJYJwi3U9ZiuFKxwyi9egi9LT728HHTuwfRdfWgef9usk/cTKF7fZLIik5K6GY8hSp7s86mvYbKrm8hLSMPsVNoD0pm7UcPIevrfBX4HRoOvPhWviyAW+70MNq35suejrsYbr79PvSGuk8gCZk8qSJLsw8JYR2awXT1CqE5gIpMRvG0cNSXANwih2F0MyZJ6+R84moCq8jUj6EQ6Uzy79C4Ra6TKGU7gUJdt7H1asJsi+OKTE6ipWRRFZXMpR9tZBRis6i30F4530Qp5cXIcrPoDUmfngt43adruOa6CTEXMI6SFp/H37KuUbS86lH0ph8jgw9UqoNRNK07jizBbWjX1G5Pxz+BohCvSSAII4ApZJZ3ejzmGIp/DyAB5F5JM4exWa0PeB8aDnwJ4BW0onjC0/H+TwgBTKJVMe4j4u64yuMMozz4PlInL3ZGkzZEmgXdj4pArjYkfRANqcc89O8KQk4Hn0LLpHaRrv5dCrfr91H0wF9DN9S78jPAZeoG0KTYKOmHRNUzG3qEbBxc77gPjXoT7Wtba5z7GK33oVGN7KTaR8A6yZAWwG2y/BBS/o4F/m4ShTaHgV+h8S76UKdOXMj6LBL2F9B8iauPmI+nkeM7SsB9BEIKwCUqnkcXOc3lCzvcbNYweuCHUM69Sk775QTkHGmhRxU9+BK6zvWkn4EAacx/Ct2Tpn8RuoCvcuX6/oOoMLSPMCYupiFgPtwQuR/5Su5855Nz7glwzivIoiZwCpmyn6OxvQ19FNyfSRdQBt8PL0KcBXwAhYtr0bY4JfSBEJk4flkIwM2mPYMu8iLpp3zElMzJGhclPE66SdbO5PsjBEj6zEdWVcEjSTuQ0fmajcmk3Zr1iWNfaWsExgRQcEwABccEUHBMAAXHBFBwTAAFxwRQcEwABccEUHBMAAXHBFBwTAAFxwRQcEwAhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYLcb/AKglWXLoEBRwAAAAAElFTkSuQmCC" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script type="module" crossorigin src="/hex_fe_week8_2023/assets/main-1916c110.js"></script>
+  <link rel="stylesheet" href="/hex_fe_week8_2023/assets/main-bc0cfdd5.css">
+</head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>    <h1>我是contact</h1>
-    <footer class="footer">我是 footer</footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-16 border-bottom border-white">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <h1 class="title-display fst-italic text-white">ALPHABOX+</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-24 px-md-0 py-24 py-md-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item me-lg-40">
+                    <a class="nav-link" aria-current="page" href="#">產品</a>
+                </li>
+                <li class="nav-item me-lg-40">
+                    <a class="nav-link" href="#">關於我們</a>
+                </li>
+                <li class="nav-item me-lg-40">
+                    <a class="nav-link" href="#">最新消息</a>
+                </li>
+                <li class="nav-item me-lg-40">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">聯絡我們</a>
+                </li>
+            </ul>
+            <div class="divide"></div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item me-lg-24">
+                    <a class="nav-link active" aria-current="page" href="#">註冊</a>
+                </li>
+                <li class="nav-item me-lg-24">
+                    <a class="nav-link" href="#">登入</a>
+                </li>
+                <li class="nav-item d-flex justify-content-center align-items-center bg-white rounded px-16 py-8 mt-16 mt-lg-0">
+                    <a class="text-dark" href="#"><span class="material-symbols-outlined align-middle me-4">
+                        point_scan
+                        </span>訂閱</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>    <h1>我是about</h1>
+    <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <h4 class="title-display">ALPHABOX+</h4>
+            <p class="fw-bold">Copyright © 2023 Hexschool.</p>
+        </div>
+        <div class="d-lg-block"><span class="material-symbols-outlined fs-80">
+                emergency
+            </span></div>
+
+        <ul class="d-flex justify-content-end p-0">
+            <li class="me-4 me-md-16 me-lg-24">
+                <a class="text-dark fw-bold link-hover" aria-current="page" href="#">關於<br class="d-lg-none">我們</a>
+            </li>
+            <li class="me-4 me-md-16 me-lg-24">
+                <a class="text-dark fw-bold link-hover" href="#">產品<br class="d-lg-none">資訊</a>
+            </li>
+            <li class="me-4 me-md-16 me-lg-24">
+                <a class="text-dark fw-bold link-hover" href="#">常見<br class="d-lg-none">問題</a>
+            </li>
+            <li class="">
+                <a class="text-dark fw-bold link-hover" href="#">隱私<br class="d-lg-none">政策</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
     
   </body>
 </html>
