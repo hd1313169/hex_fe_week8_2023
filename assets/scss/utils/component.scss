@@ -37,7 +37,13 @@
 .title-display {
     font-family: "Shrikhand" !important;
 }
-
+.section-title{
+    font-size: 40px;
+    
+    @include medium{
+        font-size: 48px;
+    }
+}
 // letter-spacing
 .letter-16 {
     letter-spacing: 16px;

@@ -4,7 +4,7 @@
   @include gd-linear(180deg);
 
 
-  @include medium{
+  @include medium {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true);
     width: 100%;
     height: 100vh;
@@ -13,11 +13,13 @@
     background-repeat: no-repeat;
   }
 }
-.bg-carousel{
+
+.bg-carousel {
   padding-top: 20%;
   z-index: -2;
 }
-.bg-carousel-img{
+
+.bg-carousel-img {
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -26,7 +28,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @include medium{
+  @include medium {
     background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/carousel_background.png?raw=true);
     width: 50%;
     height: 100%;
@@ -37,17 +39,41 @@
 }
 
 
-.news{
+.recentNews {
 
-  &-item{
+  &-item {
     width: 100%;
     margin-top: -1px;
   }
 
-  @include medium{
-    &-item{
+  @include medium {
+
+    &-item {
       width: calc(50% - 1px);
     }
-  
+
+  }
+}
+
+
+.bg-share {
+  overflow: hidden;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "ALPHABOX+";
+    font-family: "Shrikhand";
+    font-size: 128px;
+    color: rgba(256, 256, 256, 4%);
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @include medium{
+      font-size: 400px;
+      bottom: -10%;
+
+    }
   }
 }
