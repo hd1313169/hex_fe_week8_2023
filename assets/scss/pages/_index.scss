@@ -1,14 +1,42 @@
-.banner{
 
-  @include large{
-    &-subtitle{
-      letter-spacing: 16px;
-    }
-  }
-
-}
-.bg-banner{
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true);
+// .banner{
+//   // margin-bottom: -80px;
+// }
+.bg-banner {
   width: 100%;
-  height: 100vh;
+  @include gd-linear(180deg);
+
+
+  @include medium{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.bg-carousel{
+  padding-top: 20%;
+  z-index: -2;
+}
+.bg-carousel-img{
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/screen.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include medium{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/screen.png?raw=true);
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
