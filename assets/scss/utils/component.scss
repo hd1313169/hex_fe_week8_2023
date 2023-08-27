@@ -113,6 +113,7 @@
         display: block;
     }
 }
+
 .d-md-none {
     display: block;
 
@@ -139,40 +140,93 @@
     transform-style: preserve-3d;
     border-bottom-color: transparent;
     animation: spin-rl 5s linear 3s infinite;
-  }
-  @-webkit-keyframes spin-rl {
+}
+
+@-webkit-keyframes spin-rl {
     0% {
-      -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
-  
+
     100% {
-      -webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
     }
-  }
-  @-moz-keyframes spin-rl {
+}
+
+@-moz-keyframes spin-rl {
     0% {
-      -moz-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
     }
-  
+
     100% {
-      -moz-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
     }
-  }
-  @-o-keyframes spin-rl {
+}
+
+@-o-keyframes spin-rl {
     0% {
-      -o-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
     }
-  
+
     100% {
-      -o-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
     }
-  }
-  @keyframes spin-rl {
+}
+
+@keyframes spin-rl {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
+
+
+// swiper
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    &-slide {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        &:nth-child(1){
+            background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/carousel.png?raw=true);
+        }
+        &:nth-child(2){
+            background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/meeting.png?raw=true);
+        }
+        h3 {
+            font-size: 64px !important;
+        }
+
+        h4 {
+            font-size: 24px;
+            letter-spacing: 24px;
+        }
+    }
+
+    @include medium {
+        &-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            h3 {
+                font-size: 96px !important;
+            }
+
+            h4 {
+                font-size: 32px;
+                letter-spacing: 32px;
+            }
+        }
+    }
+}

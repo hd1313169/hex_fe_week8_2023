@@ -1,9 +1,7 @@
 
-// .banner{
-//   // margin-bottom: -80px;
-// }
 .bg-banner {
   width: 100%;
+  height: 100vh;
   @include gd-linear(180deg);
 
 
@@ -22,17 +20,15 @@
 }
 .bg-carousel-img{
   z-index: -1;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/screen.png?raw=true);
+  background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/carousel_background.png?raw=true);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @include medium{
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/screen.png?raw=true);
+    background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/carousel_background.png?raw=true);
     width: 50%;
     height: 100%;
     background-size: cover;
