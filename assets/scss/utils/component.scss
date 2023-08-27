@@ -96,6 +96,11 @@
     }
 }
 
+.divide-vertical{
+    width: 1px;
+    height: auto;
+    background: $white;
+}
 
 // display
 .d-lg-block {
@@ -130,6 +135,12 @@
 .card-hover-primary {
     &:hover {
         box-shadow: 0 0 16px 8px #8F00FFCC;
+    }
+}
+
+.arrow-hover{
+    &:hover{
+        filter: opacity(.6);
     }
 }
 
@@ -189,6 +200,7 @@
     height: 100%;
 
     &-slide {
+        z-index: 999;
         width: 100%;
         background-size: cover;
         background-position: center;

@@ -1,7 +1,6 @@
-
 .bg-banner {
   width: 100%;
-  height: 100vh;
+  // height: 100vh; 待測試
   @include gd-linear(180deg);
 
 
@@ -34,5 +33,21 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+
+.news{
+
+  &-item{
+    width: 100%;
+    margin-top: -1px;
+  }
+
+  @include medium{
+    &-item{
+      width: calc(50% - 1px);
+    }
+  
   }
 }
