@@ -16,8 +16,9 @@
     rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <script type="module" crossorigin src="/hex_fe_week8_2023/assets/main-bd8eb54e.js"></script>
-  <link rel="stylesheet" href="/hex_fe_week8_2023/assets/main-2e60019d.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script type="module" crossorigin src="/hex_fe_week8_2023/assets/bootstrap.min-016a1228.js"></script>
+  <link rel="stylesheet" href="/hex_fe_week8_2023/assets/bootstrap-aea25305.css">
 </head>
 
 <body>
@@ -205,21 +206,95 @@
         </div>
       </div>
   </div>
-  <div class="bg-radial-inner bg-carousel position-relative">
-    <div class="bg-carousel-img position-absolute"></div>
+
+  <div class="bg-radial-inner bg-carousel position-relative pb-52 pb-md-48">
+    <div class="bg-carousel-img position-absolute top-0 start-0"></div>
     <div class="container">
       <h2 class="text-white letter-16 mb-20 mb-md-16 pt-8">什麼是<br class="mb-8 mb-md-12">ALPHABOX+</h2>
     </div>
 
     <div class="divide mb-16 mb-md-32"></div>
     <div class="container">
-      <img src="/hex_fe_week8_2023/assets/vito-f02791d7.png" alt="Vito" class="d-md-block h-50">
+      <!-- <div class="d-flex align-items-center">
+        <img src="../assets/images/line_start_arrow_notch.png" alt="arrow" class="me-52" style="width: 180px;">
+        <div class="carousel-item-test px-16 px-md-40 pt-160 pb-16 py-md-160 text-white">
+          <h3 class="title-display">01</h3>
+          <h4 class="mb-8 mb-md-16">立體投影技術</h4>
+          <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+        </div>
+        <img src="../assets/images/line_end_arrow_notch.png" alt="arrow" class="ms-52" style="width: 180px;">
+      </div> -->
+
+      <div class="d-flex align-items-center">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwCAYAAAC47FD8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAF8SURBVHhe7drRbRpBFAVQcAWUkFJcgkugg7gD04HdgdOBS0g6SAmU4BLIfetBWpz1kg9LmbHOkZ4GhuXv8jTzxAYAAAAAAADg851Op2+pu/YWxpUg36deK9RtC8bTuvKvVPnRtmE8CfAhVV25HFO6M+NJcG9bgOf27WMYQ0K7Sz1N8b10bI/AGBLapa58pjszhoS1Ln0vU2yXuQgyhoT1PIpb4yJI3yqkqfMobo3uTN8S0vkobo0xHf1KONcufUtcBPmvtm29kGDushxS36cN6NQ22svJX4FOmG+zPKccHeje+0DftHVOkBnWR0eOCnUdN+6nDejU+w69qoKdOqb+lR8A/UtQH97yelWN9upCCX1LUKtb/67UXvHUvgL9S2D3qWvHEBdLxlGBTT1P0V32sz0K40hw17p1zbNhLAludevHKcKX/MGfcSXASyM+YzzGlhDPR3zGeIwvIZ6P+Izx+BoS5vOl0RiPr6HCXMFubwEAAAAAAADgU202fwDvrLUSNvnboAAAAABJRU5ErkJggg==" alt="arrow"
+          class="me-52 button-prev d-lg-block arrow-hover" style="width: 180px;">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-16 px-md-40 pt-160 pb-16 py-md-160 text-white position-relative">
+              <h3 class="title-display">01</h3>
+              <h4 class="mb-8 mb-md-16">立體投影技術</h4>
+              <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+            <div class="swiper-slide px-16 px-md-40 pt-160 pb-16 py-md-160 text-white position-relative">
+              <h3 class="title-display">02</h3>
+              <h4 class="mb-8 mb-md-16">立體投影技術</h4>
+              <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwCAYAAAC47FD8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7dpdbQJBFAXgoQqQgIU6QEIlVAIO2iooKCgOKqE4qITFQSXczgYS/pbd9oFkL/m+ZF6WBF5OTrh3pxQAAAAAAAAAuImIeK5nVuAetGGup2mDXeAe1DAvY+dbW5NeDfG0np84eCmQWQ3xIk412prU9iE+9y7YpFSDO49ujaGRlGpwv+K6D21NKvs1Xp9GW5NKHNZ4faz4yCEu13h9rPgYv7hc4w39DZn1fd+k4weiwLgt61lNJpPt+QcCTVbbet5qqNfHDx8K5LU9fyDQZLSq57G286bAmMTunvR/hsJ5gTGKwx3pIe1q77XAmNWQrv8Q5k14scLYxfCr77aVFwUyGGjnT61MGnF9EGzC0Ec20T0ItheVpgUy6WhnrUxOcbqms4ojt6NB0CqO3PbtbBXHfahBftLKAAAAAAAAwG38AmITt1iVUD1IAAAAAElFTkSuQmCC" alt="arrow"
+          class="ms-52 button-next d-lg-block arrow-hover" style="width: 180px;">
+      </div>
+      <div class="w-100 bg-linear-right py-20 mt-32 mt-md-40"></div>
     </div>
-    <!-- <img src="../assets/images/carousel_background.png" alt="background" class="w-50 start-0 top-0"> -->
   </div>
 
-  <!-- <div class="bg-linear-left py-80"> -->
+  <div class="bg-radial-inner pt-60 pb-80 pt-md-160 pb-md-16 text-white">
+    <div class="container">
+      <h2 class="letter-48 mb-32 mb-md-40">最新消息</h2>
+      <div class="px-16 py-32 py-md-40 border-top border-bottom">
+        <p class="letter-16 mb-8"><span class="material-symbols-outlined align-middle me-16">emergency</span>2023.06.30
+        </p>
+        <h3 class="letter-20 mb-12">產品升級公告</h3>
+        <div class="d-flex align-items-top justify-content-between flex-wrap">
+          <p class="w-75 mb-16 mb-md-0">榮幸地宣布，ALPHABOX+
+            已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
+          <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwCAYAAAC47FD8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7dpdbQJBFAXgoQqQgIU6QEIlVAIO2iooKCgOKqE4qITFQSXczgYS/pbd9oFkL/m+ZF6WBF5OTrh3pxQAAAAAAAAAuImIeK5nVuAetGGup2mDXeAe1DAvY+dbW5NeDfG0np84eCmQWQ3xIk412prU9iE+9y7YpFSDO49ujaGRlGpwv+K6D21NKvs1Xp9GW5NKHNZ4faz4yCEu13h9rPgYv7hc4w39DZn1fd+k4weiwLgt61lNJpPt+QcCTVbbet5qqNfHDx8K5LU9fyDQZLSq57G286bAmMTunvR/hsJ5gTGKwx3pIe1q77XAmNWQrv8Q5k14scLYxfCr77aVFwUyGGjnT61MGnF9EGzC0Ec20T0ItheVpgUy6WhnrUxOcbqms4ojt6NB0CqO3PbtbBXHfahBftLKAAAAAAAAwG38AmITt1iVUD1IAAAAAElFTkSuQmCC" alt="arrow" class="arrow-hover"
+              style="width: 192px;"></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap mb-40 mb-md-80">
+        <div class="news-item px-16 py-32 py-md-40 border-top border-bottom">
+          <p class="letter-16 mb-8"><span
+              class="material-symbols-outlined align-middle me-16">emergency</span>2023.06.30
+          </p>
+          <h3 class="letter-20 mb-12">限時優惠活動</h3>
+          <p class="mb-16">榮幸地宣布，ALPHABOX+
+            為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>
+          <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwCAYAAAC47FD8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7dpdbQJBFAXgoQqQgIU6QEIlVAIO2iooKCgOKqE4qITFQSXczgYS/pbd9oFkL/m+ZF6WBF5OTrh3pxQAAAAAAAAAuImIeK5nVuAetGGup2mDXeAe1DAvY+dbW5NeDfG0np84eCmQWQ3xIk412prU9iE+9y7YpFSDO49ujaGRlGpwv+K6D21NKvs1Xp9GW5NKHNZ4faz4yCEu13h9rPgYv7hc4w39DZn1fd+k4weiwLgt61lNJpPt+QcCTVbbet5qqNfHDx8K5LU9fyDQZLSq57G286bAmMTunvR/hsJ5gTGKwx3pIe1q77XAmNWQrv8Q5k14scLYxfCr77aVFwUyGGjnT61MGnF9EGzC0Ec20T0ItheVpgUy6WhnrUxOcbqms4ojt6NB0CqO3PbtbBXHfahBftLKAAAAAAAAwG38AmITt1iVUD1IAAAAAElFTkSuQmCC" alt="arrow" class="arrow-hover"
+              style="width: 86px; height: auto;"></a>
+        </div>
+        <div class="divide-vertical d-md-block"></div>
 
+        <div class="news-item px-16 py-32 py-md-40 border-top border-bottom">
+          <p class="letter-16 mb-8"><span
+              class="material-symbols-outlined align-middle me-16">emergency</span>2023.06.30
+          </p>
+          <h3 class="letter-20 mb-12">新功能上線</h3>
+          <p class="mb-16">榮幸地宣布，ALPHABOX+
+            為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。</p>
+          <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwCAYAAAC47FD8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7dpdbQJBFAXgoQqQgIU6QEIlVAIO2iooKCgOKqE4qITFQSXczgYS/pbd9oFkL/m+ZF6WBF5OTrh3pxQAAAAAAAAAuImIeK5nVuAetGGup2mDXeAe1DAvY+dbW5NeDfG0np84eCmQWQ3xIk412prU9iE+9y7YpFSDO49ujaGRlGpwv+K6D21NKvs1Xp9GW5NKHNZ4faz4yCEu13h9rPgYv7hc4w39DZn1fd+k4weiwLgt61lNJpPt+QcCTVbbet5qqNfHDx8K5LU9fyDQZLSq57G286bAmMTunvR/hsJ5gTGKwx3pIe1q77XAmNWQrv8Q5k14scLYxfCr77aVFwUyGGjnT61MGnF9EGzC0Ec20T0ItheVpgUy6WhnrUxOcbqms4ojt6NB0CqO3PbtbBXHfahBftLKAAAAAAAAwG38AmITt1iVUD1IAAAAAElFTkSuQmCC" alt="arrow" class="arrow-hover"
+              style="width: 86px; height: auto;"></a>
+        </div>
+      </div>
+      <div class="position-relative d-block mx-auto text-center mb-md-96 mb-0">
+        <img src="/hex_fe_week8_2023/assets/Group 2-57977b1e.png" alt="more" class="spin-rl" style="width: 132px;">
+        <p class="text-center position-absolute top-50 start-50 translate-middle">查看更多</p>
+      </div>
+      <p class="text-end d-md-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+    </div>
   </div>
 
   <div class="container">
@@ -250,6 +325,19 @@
     </div>
 </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
 </body>
 
 </html>
