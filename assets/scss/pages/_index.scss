@@ -59,7 +59,8 @@
 .bg-share {
   overflow: hidden;
 
-  &::after {
+  &::before {
+    z-index: 1;
     display: block;
     position: absolute;
     content: "ALPHABOX+";
