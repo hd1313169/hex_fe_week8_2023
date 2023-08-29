@@ -37,13 +37,15 @@
 .title-display {
     font-family: "Shrikhand" !important;
 }
-.section-title{
+
+.section-title {
     font-size: 40px;
-    
-    @include medium{
+
+    @include medium {
         font-size: 48px;
     }
 }
+
 // letter-spacing
 .letter-16 {
     letter-spacing: 16px;
@@ -102,7 +104,7 @@
     }
 }
 
-.divide-vertical{
+.divide-vertical {
     width: 1px;
     height: auto;
     background: $white;
@@ -144,8 +146,8 @@
     }
 }
 
-.arrow-hover{
-    &:hover{
+.arrow-hover {
+    &:hover {
         filter: opacity(.6);
     }
 }
@@ -215,12 +217,14 @@
         flex-direction: column;
         align-items: start;
 
-        &:nth-child(1){
+        &:nth-child(1) {
             background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/carousel.png?raw=true);
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
             background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/meeting.png?raw=true);
         }
+
         h3 {
             font-size: 64px !important;
         }
@@ -245,6 +249,20 @@
                 font-size: 32px;
                 letter-spacing: 32px;
             }
+        }
+    }
+}
+
+.product {
+    margin-top: -2px;
+
+    &-nav-item {
+        background-color: $black !important;
+        color: $white !important;
+
+        &-active {
+            background-color: $white !important;
+            color: $black !important;
         }
     }
 }
