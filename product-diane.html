@@ -22,8 +22,8 @@
     href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <script type="module" crossorigin src="/hex_fe_week8_2023/assets/bootstrap.min-a2c40cca.js"></script>
-  <link rel="stylesheet" href="/hex_fe_week8_2023/assets/bootstrap-acc29661.css">
+  <script type="module" crossorigin src="/hex_fe_week8_2023/assets/bootstrap.min-127f86e4.js"></script>
+  <link rel="stylesheet" href="/hex_fe_week8_2023/assets/bootstrap-02b6c5ce.css">
 </head>
 
 <body>
@@ -75,14 +75,14 @@
 
 </nav>    <div class="bg-black py-16">
       <div class="container">
-        <ul class="product-nav d-flex justify-content-center align-items-center m-0 mx-auto">
-          <li class="me-24"><a href="#"
+        <ul class="product-nav d-flex justify-content-center align-items-center m-0 mx-auto p-0">
+          <li class="me-8 me-md-24"><a href="#"
               class="px-16 px-lg-80 py-4 title-display border border-white rounded-pill product-nav-item product-nav-item-active">Diane</a>
           </li>
-          <li class="me-24"><a href="#"
+          <li class="me-8 me-md-24"><a href="#"
               class="px-16 px-lg-80 py-4 title-display border border-white rounded-pill product-nav-item">Felix</a>
           </li>
-          <li class="me-24"><a href="#"
+          <li class="me-8 me-md-24"><a href="#"
               class="px-16 px-lg-80 py-4 title-display border border-white rounded-pill product-nav-item">Karina</a>
           </li>
           <li class=""><a href="#"
@@ -90,8 +90,153 @@
           </li>
         </ul>
       </div>
-
     </div>
+    <!-- banner -->
+    <div class="product-banner position-relative">
+      <div class="row g-0">
+        <div class="col-12 col-lg-6">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/hex_fe_week8_2023/assets/diane_square1-9f0571f9.png" class="d-block w-100" alt="diane">
+              </div>
+              <div class="carousel-item">
+                <img src="/hex_fe_week8_2023/assets/diane_square2-7afb91b6.png" class="d-block w-100" alt="diane">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="material-symbols-outlined carousel-control-btn" aria-hidden="true">
+                arrow_circle_left
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="material-symbols-outlined carousel-control-btn" aria-hidden="true">
+                arrow_circle_right
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="h-100 bg-black px-12 pt-16 pb-24 px-md-40 text-white d-flex flex-column justify-content-center">
+            <h2 class="title-display fs-md-64 fs-40">Diane</h2>
+            <p>知識型</p>
+            <p class="fw-normal mb-8 mb-md-16">學術領導/知識分享/智能問答</p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA64AAABECAYAAACBMWgLAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM7SURBVHgB7d3RURNRFAbgg2MBdGA6MCVQAh1oCXagHWgHYAVoBYkVoBUkVoAdHM/OLsIg4CbZbBb5vpl/9okZJm//nHPvjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCZyMwPldPKcQAAAMAUVWn9lK1F5W1lFgAAADAl3eT1tlVXaE8CAAAApqBbGV7l364qF6axAAAAHFxTTB8or7ctKu8q8wAAAICxNRc1dRPWPlaVs2ZaGwAAADCme8699mGlGAAAgPF0K8FXuZ3LdMETAAAA+5b9zr3+yyq7leL0ZiwAAABD68rrZQ5nke00dxYAAAAwlGxXf4e2ynYaexIAAACwq9zu0qa+vBkLAADA7qpUznP3c699LHKib8YeBQAAAJPWTUQXlVmMY11ZVr4236Ojo18BAAAAj6nyelw5z8NYpJViAAAA+sj9nnvtY/Q3Y60KAwAAPDFVGk/rc1Y59Dut6xhhpXjj4lo/0Jh71QAAANzvOA5fXO9axk2J/R4D2aa4ruvzKgAAAOBh62iL7OcqscvYgeIKAADAvjUrxMu4mcauN/jbeBEAAACwXz+6rDctrY2XAQAAAMNqJqzfKl+a7Hpp0zbFtTlguw4AAAAO6XVM63Kmn3FTVJcBAADA85WZ73MalpV3lVkAAABAFcTjylkezlXlvPK2+V9iJBvfKgwAAMD4sp1qXlTmMa7mrOoy2tuAlwEAAAB3VWk96aadY01Vr1eAp3SGFgAAgCnqCuQYZfVTtgVZWQUAAKCfKpEfc3+aqeqHpqwGAAAAbKLK5KxymcM6yMVKAAAA/GeqVM4rqxzGOrsV4AAAAIBdVcF8k7tfwuRtVQAAAIZXRfN9bud6Bfg0rQADAAAwtKZsVi5yMy5WAgAAYP+yvYRp1aOoelsVAACAcWX7Zupj51n/XKykrAIAADCqbnL62ArwPAAAAGBs2Z5nPbuzAuxtVQAAAA6vO896md5WBQAAYIqyfa5mFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADxRvwEB/RR7/zMD8gAAAABJRU5ErkJggg==" alt="arrow" class="arrow-hover mb-16 mb-lg-0"
+              style="width: 314px; height: auto;">
+            <div class="position-relative mx-auto mb-lg-96 mb-0 d-lg-none">
+              <img src="/hex_fe_week8_2023/assets/Group 2-57977b1e.png" alt="more" class="spin-rl" style="width: 109px;">
+              <a href="#" class="position-absolute top-50 start-50 translate-middle text-center text-white"><span
+                  class="material-symbols-outlined">
+                  arrow_downward
+                </span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-banner-btn position-absolute start-50 translate-middle d-lg-block">
+        <div class="position-relative mx-auto">
+          <img src="/hex_fe_week8_2023/assets/Group 2-57977b1e.png" alt="more" class="spin-rl" style="width: 144px;">
+          <a href="#" class="position-absolute top-50 start-50 translate-middle text-center text-white"><span
+              class="material-symbols-outlined">
+              arrow_downward
+            </span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-move pt-60 pb-80 pt-md-80 pt-md-120 bg-white text-black">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12">
+            <div class="d-flex justify-content-between fw-medium mb-32 mb-md-120">
+              <div>
+                <h3 class="mb-24 mb-md-40 fs-20"><span
+                    class="material-symbols-outlined align-middle me-12">emergency</span>學術領導/知識分享/智能問答</h3>
+                <p>歡迎來到ALPHABOX+的全新世界！在這裡，我們很榮幸地向您介紹我們的最新力作 - 3D立體投影機器人 Diane！</p>
+              </div>
+              <p class="fs-20 d-md-block">ALPHABOX+</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h4 class="fs-16 mb-16 mb-md-24">先進的3D投影技術</h4>
+            <p class="fw-normal mb-24 mb-md-104">Diane 搭載了最新的 3D 投影技術，能夠將虛擬影像清晰地呈現在您的現實空間中，讓您感受身臨其境的體驗！</p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h4 class="fs-16 mb-16 mb-md-24">人性化的互動設計</h4>
+            <p class="fw-normal mb-24 mb-md-104">Diane 具有高度智能的語音辨識和回應功能，您可以像跟朋友聊天一樣，與 Diane 進行自然、流暢的對話。</p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h4 class="fs-16 mb-16 mb-md-24">豐富的應用場景</h4>
+            <p class="fw-normal mb-24 mb-md-104">無論是家庭娛樂、教育培訓還是商業展示，Diane 都能夠輕鬆滿足您的需求，為您提供更多元的互動體驗。</p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h4 class="fs-16 mb-16 mb-md-24">高度自主性</h4>
+            <p class="fw-normal mb-24 mb-md-0">Diane 具有強大的自主學習能力，能夠不斷地學習並優化自己，為您創造更加便捷、貼心的生活方式。</p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h4 class="fs-16 mb-16 mb-md-24">簡單易用的操作界面</h4>
+            <p class="fw-normal">Diane 擁有直觀的操作界面，讓您可以輕鬆地掌握並運用它的各種功能。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 使用分享 -->
+    <div class="bg-radial-outer pt-60 pb-80 pt-md-160 pb-md-216 text-white">
+      <div class="container">
+        <h2 class="section-title letter-48 mb-16 mb-md-12">使用分享</h2>
+
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <p class="fw-normal mb-24 mb-md-80">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+          </div>
+          <div class="col-12 col-md-8">
+          </div>
+          <!-- 分享 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-24 mb-lg-0">
+            <div class="bg-primary-dark p-24 d-flex flex-column justify-content-between h-100">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">Zona</span><span class="me-8 fs-8">●</span><span>Taipei</span></h5>
+                <p>ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Dianne</span></h6>
+            </div>
+          </div>
+          <!-- 分享 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-24 mb-lg-0">
+            <div class="bg-white p-24 d-flex flex-column justify-content-between text-black h-100">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">Lin</span><span class="me-8 fs-8">●</span><span>Chiayi</span></h5>
+                <p>非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Felix</span></h6>
+            </div>
+          </div>
+          <!-- 分享 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-24 mb-lg-0">
+            <div class="bg-primary-dark p-24 d-flex flex-column justify-content-between h-100">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">云</span><span class="me-8 fs-8">●</span><span>Taipei</span></h5>
+                <p>我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Dianne</span></h6>
+            </div>
+          </div>
+          <!-- 分享 4 -->
+        </div>
+      </div>
+    </div>
+    <!-- 使用分享 end-->
     <div class="container">
     <div class="footer d-flex justify-content-between py-40 py-md-56">
         <div>
