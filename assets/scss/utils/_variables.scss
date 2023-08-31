@@ -394,8 +394,13 @@ $spacers: (
   64: $spacer * 4,
   80: $spacer * 5,
   96: $spacer * 6,
+  104: $spacer * 6.5,
+  120: $spacer * 7.5,
   144: $spacer * 9,
   160: $spacer * 10,
+  216: $spacer * 13.5,
+  320: $spacer * 20,
+
   ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -645,7 +650,8 @@ $font-sizes: (
 $headings-margin-bottom: 0 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
-$headings-font-weight: 500 !default;
+// $headings-font-weight: 500 !default;
+$headings-font-weight: 700 !default;
 // $headings-line-height:        1.2 !default;
 $headings-line-height: 1.5 !default;
 $headings-color: null !default;
@@ -1615,8 +1621,10 @@ $breadcrumb-border-radius: null !default;
 // scss-docs-start carousel-variables
 $carousel-control-color: $white !default;
 $carousel-control-width: 15% !default;
-$carousel-control-opacity: .5 !default;
-$carousel-control-hover-opacity: .9 !default;
+// $carousel-control-opacity: .5 !default;
+$carousel-control-opacity: 1 !default;
+// $carousel-control-hover-opacity: .9 !default;
+$carousel-control-hover-opacity: 1 !default;
 $carousel-control-transition: opacity .15s ease !default;
 
 $carousel-indicator-width: 30px !default;

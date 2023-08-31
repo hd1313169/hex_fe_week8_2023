@@ -33,6 +33,12 @@
     }
 }
 
+@include medium {
+    .fs-md-64 {
+        font-size: 64px !important;
+    }
+}
+
 // style
 .title-display {
     font-family: "Shrikhand" !important;
@@ -124,6 +130,14 @@
 
     @include medium {
         display: block;
+    }
+}
+
+.d-lg-none {
+    display: block;
+
+    @include large {
+        display: none;
     }
 }
 
@@ -263,6 +277,47 @@
         &-active {
             background-color: $white !important;
             color: $black !important;
+        }
+    }
+
+    &-banner {
+        &-btn {
+            top: 84%;
+        }
+    }
+
+    &-move {
+        h4{
+            border-bottom: 2px solid $black !important;
+
+        }
+
+        @include medium {
+            h4 {
+                border: none !important;
+
+                &:hover {
+                    border-bottom: 2px solid $black !important;
+                }
+            }
+        }
+
+    }
+}
+
+.carousel {
+
+    &-control {
+        &-btn {
+            font-size: 48px;
+
+            &:hover {
+                color: $primary !important;
+            }
+
+            @include medium {
+                font-size: 80px;
+            }
         }
     }
 }
