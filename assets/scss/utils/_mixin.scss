@@ -34,9 +34,9 @@
     }
 }
 
-@mixin divide{
+@mixin divide-($height){
     display: block;
     background: $white;
     width: 100%;
-    height: 1px;
+    height: $height;
 }

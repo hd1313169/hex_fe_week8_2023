@@ -98,12 +98,14 @@
 
 
 // divide
-.divide {
-    @include divide;
+.divide-1 {
+    @include divide-(1px);
 }
-
-.divide-md {
-    @include divide;
+.divide-2 {
+    @include divide-(2px);
+}
+.divide-md-2 {
+    @include divide-(2px);
 
     @include large {
         display: none;
