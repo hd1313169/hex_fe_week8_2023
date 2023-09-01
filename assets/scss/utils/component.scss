@@ -9,17 +9,17 @@
 
 //   position
 .top-16 {
-    top: 16px;
-}
-
-.left-center {
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 16px !important;
 }
 
 // style
 .title-display {
     font-family: "Shrikhand" !important;
+}
+
+//  font
+.ff-sec {
+    font-family: 'Saira Extra Condensed' !important;
 }
 
 // letter-spacing
@@ -75,6 +75,7 @@
 .divide-2 {
     @include divide-(2px);
 }
+
 .divide-12 {
     @include divide-(12px);
 }
@@ -142,6 +143,7 @@
         filter: opacity(.6);
     }
 }
+
 
 // animate
 .spin-rl {
@@ -322,5 +324,25 @@
     @include xxl {
         font-size: 96px;
         letter-spacing: 96px;
+    }
+}
+
+.news {
+    &-number {
+        font-family: 'Saira Extra Condensed';
+        font-weight: 300;
+        font-size: 96px;
+
+        @include medium {
+            font-size: 128px;
+        }
+    }
+}
+
+.page {
+    &-link {
+        &-active {
+            text-decoration: underline;
+        }
     }
 }
