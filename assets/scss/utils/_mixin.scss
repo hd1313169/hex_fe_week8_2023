@@ -52,3 +52,10 @@
     width: 100%;
     height: $height;
 }
+
+@mixin border-dotted($top, $end, $bottom, $start, $color){
+    border-top: $top dotted  $color !important;
+    border-right: $end dotted  $color !important;
+    border-bottom: $bottom dotted  $color !important;
+    border-left: $start dotted  $color !important;
+}

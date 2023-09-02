@@ -23,6 +23,9 @@
 }
 
 // letter-spacing
+.letter-14{
+    letter-spacing: 14px;
+}
 .letter-16 {
     letter-spacing: 16px;
 }
@@ -66,7 +69,10 @@
     @include gd-radial($black, $secondary-dark);
 }
 
-
+//border
+.border-dotted-faq{
+    @include border-dotted(2px, 0, 2px, 0, $white);
+}
 // divide
 .divide-1 {
     @include divide-(1px);
