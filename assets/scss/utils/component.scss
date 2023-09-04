@@ -75,6 +75,14 @@
     @include border-dotted(2px, 0, 2px, 0, $white);
 }
 
+.border-dotted-faq-item {
+    @include border-dotted(0, 0, 2px, 0, $white);
+
+    @include medium{
+        border: none;
+    }
+}
+
 // divide
 .divide-1 {
     @include divide-(1px);
