@@ -23,9 +23,10 @@
 }
 
 // letter-spacing
-.letter-14{
+.letter-14 {
     letter-spacing: 14px;
 }
+
 .letter-16 {
     letter-spacing: 16px;
 }
@@ -70,9 +71,10 @@
 }
 
 //border
-.border-dotted-faq{
+.border-dotted-faq {
     @include border-dotted(2px, 0, 2px, 0, $white);
 }
+
 // divide
 .divide-1 {
     @include divide-(1px);
@@ -147,6 +149,13 @@
 .arrow-hover {
     &:hover {
         filter: opacity(.6);
+    }
+}
+
+.hover-underline {
+    display: block;
+    &:hover {
+        border-bottom: 1px solid $secondary-light !important;
     }
 }
 
