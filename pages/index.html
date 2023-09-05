@@ -22,12 +22,16 @@
     href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 
 <body>
   <div class="bg-banner position-relative">
     <%- include('./layout/header'); -%>
-    <div class="divide-1"></div>
+      <div class="divide-1"></div>
       <div class="container">
         <div class="pt-28 pb-32 py-md-56">
           <div class="row flex-row-reverse">
@@ -90,7 +94,9 @@
               <div class="position-relative h-100 card-hover-primary pb-16 pb-md-0">
                 <img src="../assets/images/robot/diane.png" alt="Diane" class="d-md-block">
                 <img src="../assets/images/robot/diane_square1.png" alt="Diane" class="d-md-none">
-                <p class="position-absolute top-16 start-50 translate-middle-x title-display fs-32 text-center text-white">Diane</p>
+                <p
+                  class="position-absolute top-16 start-50 translate-middle-x title-display fs-32 text-center text-white">
+                  Diane</p>
                 <a href="product-diane.html" class="stretched-link"></a>
               </div>
             </div>
@@ -137,7 +143,9 @@
                   <div class="position-relative h-100 card-hover-primary pb-16 pb-md-0">
                     <img src="../assets/images/robot/felix.png" alt="Felix" class="d-md-block">
                     <img src="../assets/images/robot/felix_square1.png" alt="Felix" class="d-md-none">
-                    <p class="position-absolute top-16 start-50 translate-middle-x title-display fs-32 text-center text-white">Felix</p>
+                    <p
+                      class="position-absolute top-16 start-50 translate-middle-x title-display fs-32 text-center text-white">
+                      Felix</p>
                     <a href="product-felix.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -145,7 +153,9 @@
                   <div class="position-relative h-100 card-hover-primary pb-16 pb-md-0">
                     <img src="../assets/images/robot/karina.png" alt="Karina" class="d-md-block">
                     <img src="../assets/images/robot/karina_square1.png" alt="karina" class="d-md-none">
-                    <p class="position-absolute top-16 start-50 translate-middle-x title-display fs-32 text-center text-white">Karina
+                    <p
+                      class="position-absolute top-16 start-50 translate-middle-x title-display fs-32 text-center text-white">
+                      Karina
                     </p>
                     <a href="product-karina.html" class="stretched-link"></a>
                   </div>
@@ -156,7 +166,9 @@
               <div class="position-relative h-100 card-hover-primary pb-16 pb-md-0">
                 <img src="../assets/images/robot/vito.png" alt="Vito" class="d-md-block">
                 <img src="../assets/images/robot/vito_square1.png" alt="Vito" class="d-md-none">
-                <p class="position-absolute top-16 start-50 translate-middle-x title-display fs-32 text-center text-white">Vito</p>
+                <p
+                  class="position-absolute top-16 start-50 translate-middle-x title-display fs-32 text-center text-white">
+                  Vito</p>
                 <a href="product-vito.html" class="stretched-link"></a>
               </div>
             </div>
@@ -173,7 +185,7 @@
     </div>
 
     <div class="divide-2 mb-16 mb-md-32"></div>
-    <div class="container">
+    <!-- <div class="container">
       <div class="d-flex align-items-center">
         <img src="../assets/images/line_start_arrow_notch.png" alt="arrow"
           class="me-52 button-prev d-lg-block arrow-hover" style="width: 180px;">
@@ -197,7 +209,7 @@
           class="ms-52 button-next d-lg-block arrow-hover" style="width: 180px;">
       </div>
       <div class="w-100 bg-linear-right py-20 mt-32 mt-md-40"></div>
-    </div>
+    </div> -->
   </div>
 
   <!-- 最新消息 -->
@@ -241,7 +253,8 @@
       </div>
       <div class="position-relative mx-auto text-center mb-md-96 mb-0">
         <img src="../assets/images/Group 2.png" alt="more" class="spin-rl" style="width: 132px;">
-        <a href="news-list.html" class="position-absolute top-50 start-50 translate-middle text-center text-white">查看更多</a>
+        <a href="news-list.html"
+          class="position-absolute top-50 start-50 translate-middle text-center text-white">查看更多</a>
       </div>
       <p class="text-end d-md-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
     </div>
@@ -266,49 +279,103 @@
           emergency
         </span></div>
 
-      <div class="row">
-        <!-- 分享 1 -->
-        <div class="col-12 col-md-4">
-          <div class="bg-primary-dark p-24 d-flex flex-column justify-content-between mb-24 h-100">
-            <div style="margin-bottom: 36%;">
-              <h5 class="mb-32"><span class="me-8">Zona</span><span class="me-8 fs-8">●</span><span>Taipei</span></h5>
-              <p>ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+      <!-- 行動版 -->
+      <div class="d-md-none">
+        <div class="row">
+          <!-- 分享 1 -->
+          <div class="col-12 col-md-4 mb-24">
+            <div class="bg-primary-dark p-24 d-flex flex-column justify-content-between h-100">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">Zona</span><span class="me-8 fs-8">●</span><span>Taipei</span></h5>
+                <p>ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Dianne</span></h6>
             </div>
-            <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Dianne</span></h6>
           </div>
-        </div>
-        <!-- 分享 2 -->
-        <div class="col-12 col-md-4">
-          <div class="bg-white p-24 d-flex flex-column justify-content-between text-black mb-24 h-100">
-            <div style="margin-bottom: 36%;">
-              <h5 class="mb-32"><span class="me-8">Lin</span><span class="me-8 fs-8">●</span><span>Chiayi</span></h5>
-              <p>非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+          <!-- 分享 2 -->
+          <div class="col-12 col-md-4 mb-24">
+            <div class="bg-white p-24 d-flex flex-column justify-content-between text-black h-100">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">Lin</span><span class="me-8 fs-8">●</span><span>Chiayi</span></h5>
+                <p>非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Felix</span></h6>
             </div>
-            <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Felix</span></h6>
           </div>
-        </div>
-        <!-- 分享 3 -->
-        <div class="col-12 col-md-4">
-          <div class="bg-primary-dark p-24 d-flex flex-column justify-content-between mb-24 h-100">
-            <div style="margin-bottom: 36%;">
-              <h5 class="mb-32"><span class="me-8">云</span><span class="me-8 fs-8">●</span><span>Taipei</span></h5>
-              <p>我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+          <!-- 分享 3 -->
+          <div class="col-12 col-md-4 mb-24">
+            <div class="bg-primary-dark p-24 d-flex flex-column justify-content-between h-100">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">云</span><span class="me-8 fs-8">●</span><span>Taipei</span></h5>
+                <p>我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Dianne</span></h6>
             </div>
-            <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Dianne</span></h6>
           </div>
-        </div>
-        <!-- 分享 4 -->
-        <div class="col-12 col-md-4">
-          <div class="bg-white p-24 d-flex flex-column justify-content-between text-black h-100">
-            <div style="margin-bottom: 36%;">
-              <h5 class="mb-32"><span class="me-8">Zichi</span><span class="me-8 fs-8">●</span><span>Kaohsiung</span>
-              </h5>
-              <p>讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+          <!-- 分享 4 -->
+          <div class="col-12 col-md-4">
+            <div class="bg-white p-24 d-flex flex-column justify-content-between text-black h-100">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">Zichi</span><span class="me-8 fs-8">●</span><span>Kaohsiung</span>
+                </h5>
+                <p>讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Vito</span></h6>
             </div>
-            <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Vito</span></h6>
           </div>
         </div>
       </div>
+
+      <!-- 電腦版 -->
+      <div class="overflow-hidden d-md-block">
+        <div class="swiper shareSwiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide p-md-40 bg-primary-dark text-white">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">Lin</span><span class="me-8 fs-8">●</span><span>Chiayi</span>
+                </h5>
+                <p>非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Felix</span></h6>
+            </div>
+            <div class="swiper-slide p-md-40 bg-white text-black">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">Lin</span><span class="me-8 fs-8">●</span><span>Chiayi</span>
+                </h5>
+                <p>非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Felix</span></h6>
+            </div>
+            <div class="swiper-slide p-md-40 bg-primary-dark text-white">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">云</span><span class="me-8 fs-8">●</span><span>Taipei</span></h5>
+                <p class="line-camp-4">我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Dianne</span></h6>
+            </div>
+            <div class="swiper-slide p-md-40 bg-white text-black">
+              <div style="margin-bottom: 36%;">
+                <h5 class="mb-32"><span class="me-8">Zichi</span><span class="me-8 fs-8">●</span><span>Kaohsiung</span>
+                </h5>
+                <p>讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+              </div>
+              <h6><span class="me-16">●</span><span class="me-16">●</span><span>ALPHABOX+ Vito</span></h6>
+            </div>
+          </div>
+        </div>
+        <!-- Scrollbar -->
+        <div class="row align-items-center mt-48">
+          <div class="col-8">
+            <!-- 加上 position-static 將滾動條的絕對定位設定覆蓋 -->
+            <div class="swiper-scrollbar position-static"></div>
+          </div>
+          <div class="col-1">
+            <p class="mb-0 text-white">SCROLL</p>
+          </div>
+        </div>
+      </div>
+      <!-- 電腦版 end -->
     </div>
   </div>
   <!-- 使用分享 end-->
@@ -356,8 +423,9 @@
             <p>知識型</p>
             <p class="fw-normal">學術領導/知識分享/智能問答</p>
           </div>
-          <a href="product-diane.html" class="d-block stretched-link"><img src="../assets/images/line_end_arrow_notch.png" alt="arrow"
-              class="arrow-hover" style="width: 155px; height: auto;"></a>
+          <a href="product-diane.html" class="d-block stretched-link"><img
+              src="../assets/images/line_end_arrow_notch.png" alt="arrow" class="arrow-hover"
+              style="width: 155px; height: auto;"></a>
         </div>
       </div>
     </div>
@@ -371,8 +439,9 @@
             <p>娛樂型</p>
             <p class="fw-normal">音樂播放/語音互動/遊戲陪伴</p>
           </div>
-          <a href="product-felix.html" class="d-block stretched-link"><img src="../assets/images/line_end_arrow_notch.png" alt="arrow"
-              class="arrow-hover" style="width: 155px; height: auto;"></a>
+          <a href="product-felix.html" class="d-block stretched-link"><img
+              src="../assets/images/line_end_arrow_notch.png" alt="arrow" class="arrow-hover"
+              style="width: 155px; height: auto;"></a>
         </div>
       </div>
     </div>
@@ -386,8 +455,9 @@
             <p>生活型</p>
             <p class="fw-normal">健康提醒/日程安排/智能家居</p>
           </div>
-          <a href="product-karina.html" class="d-block stretched-link"><img src="../assets/images/line_end_arrow_notch.png" alt="arrow"
-              class="arrow-hover" style="width: 155px; height: auto;"></a>
+          <a href="product-karina.html" class="d-block stretched-link"><img
+              src="../assets/images/line_end_arrow_notch.png" alt="arrow" class="arrow-hover"
+              style="width: 155px; height: auto;"></a>
         </div>
       </div>
     </div>
@@ -401,8 +471,9 @@
             <p>情感型</p>
             <p class="fw-normal">情感識別/心情分析/心靈支持</p>
           </div>
-          <a href="product-vito.html" class="d-block stretched-link"><img src="../assets/images/line_end_arrow_notch.png" alt="arrow"
-              class="arrow-hover" style="width: 155px; height: auto;"></a>
+          <a href="product-vito.html" class="d-block stretched-link"><img
+              src="../assets/images/line_end_arrow_notch.png" alt="arrow" class="arrow-hover"
+              style="width: 155px; height: auto;"></a>
         </div>
       </div>
     </div>
@@ -411,20 +482,32 @@
   <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- 分享swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "progressbar",
+      const swiper = new Swiper(".shareSwiper", {
+        // slide 間距
+        spaceBetween: 24,
+        // slidesPerView: 3.5,
+        breakpoints: {
+          1440: {
+            slidesPerView: 3.5,
+          },
+          992: {
+            slidesPerView: 2.5,
+          }
         },
-        navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
+        // Scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+
+          //需增加 draggable 可拉動下方滾動條
+          draggable: true
         },
+        // 使 swiper 可以使用滑鼠滾輪捲動
+        mousewheel: true
       });
     </script>
-    <!-- Swiper JS -->
 
 
 </body>

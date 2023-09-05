@@ -22,6 +22,10 @@
     font-family: 'Saira Extra Condensed' !important;
 }
 
+.fw-heavy {
+    font-weight: 900 !important;
+}
+
 // letter-spacing
 .letter-14 {
     letter-spacing: 14px;
@@ -39,6 +43,10 @@
     letter-spacing: 48px;
 }
 
+.letter-64 {
+    letter-spacing: 64px;
+}
+
 .letter-80 {
     letter-spacing: 80px;
 }
@@ -47,7 +55,6 @@
 // gradient
 .bg-nav {
     background: linear-gradient(0, $secondary -100%, $primary 100%) !important;
-
 }
 
 .bg-linear-top {
@@ -70,6 +77,12 @@
     @include gd-radial($black, $secondary-dark);
 }
 
+//opacity
+.opacity-5 {
+    opacity: .5;
+
+}
+
 //border
 .border-dotted-faq {
     @include border-dotted(2px, 0, 2px, 0, $white);
@@ -78,7 +91,7 @@
 .border-dotted-faq-item {
     @include border-dotted(0, 0, 2px, 0, $white);
 
-    @include medium{
+    @include medium {
         border: none;
     }
 }
@@ -162,6 +175,7 @@
 
 .hover-underline {
     display: block;
+
     &:hover {
         border-bottom: 1px solid $secondary-light !important;
     }
@@ -219,55 +233,82 @@
 
 
 // swiper
+
 .swiper {
-    width: 100%;
-    height: 100%;
+    overflow: initial;
 
     &-slide {
-        z-index: 999;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-
-        &:nth-child(1) {
-            background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/carousel.png?raw=true);
-        }
-
-        &:nth-child(2) {
-            background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/meeting.png?raw=true);
-        }
-
-        h3 {
-            font-size: 64px !important;
-        }
-
-        h4 {
-            font-size: 24px;
-            letter-spacing: 24px;
-        }
-    }
-
-    @include medium {
-        &-slide {
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-
-            h3 {
-                font-size: 96px !important;
-            }
-
-            h4 {
-                font-size: 32px;
-                letter-spacing: 32px;
-            }
-        }
+        word-break: break-all;
     }
 }
+
+/* 滾動條可拖曳區塊的顏色 */
+.swiper-scrollbar-drag {
+    background-color: white;
+}
+
+/* 整個滾動條的背景顏色 */
+.swiper-scrollbar {
+    background-color: gray;
+}
+
+.line-camp-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+// .swiper {
+//     width: 100%;
+//     height: 100%;
+
+//     &-slide {
+//         z-index: 999;
+//         width: 100%;
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: start;
+
+//         &:nth-child(1) {
+//             background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/carousel.png?raw=true);
+//         }
+
+//         &:nth-child(2) {
+//             background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/meeting.png?raw=true);
+//         }
+
+//         h3 {
+//             font-size: 64px !important;
+//         }
+
+//         h4 {
+//             font-size: 24px;
+//             letter-spacing: 24px;
+//         }
+//     }
+
+//     @include medium {
+//         &-slide {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: end;
+
+//             h3 {
+//                 font-size: 96px !important;
+//             }
+
+//             h4 {
+//                 font-size: 32px;
+//                 letter-spacing: 32px;
+//             }
+//         }
+//     }
+// }
 
 .product {
     margin-top: -2px;
@@ -367,5 +408,70 @@
         &-active {
             text-decoration: underline;
         }
+    }
+}
+
+.social {
+
+    &-list {
+        border-top: 1px solid $white !important;
+        flex-direction: column !important;
+
+
+        @include medium {
+            border: none !important;
+            flex-direction: row !important;
+        }
+    }
+}
+
+.contact {
+    &-character-item {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:nth-child(1) {
+            background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/robot/diane_choose.png?raw=true);
+        }
+
+        &:nth-child(2) {
+            background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/robot/felix_choose.png?raw=true);
+        }
+
+        &:nth-child(3) {
+            background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/robot/karina_choose.png?raw=true);
+        }
+
+        &:nth-child(4) {
+            background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/robot/vito_choose.png?raw=true);
+        }
+
+        @include large {
+            // width: 72.29% !important;
+            background-size: 80%;
+
+            &:nth-child(1) {
+                background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/robot/diane_horizontal.png?raw=true);
+                background-position: 0 center;
+            }
+
+            &:nth-child(2) {
+                background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/robot/felix_horizontal.png?raw=true);
+                background-position: 100% center;
+            }
+
+            &:nth-child(3) {
+                background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/robot/karina_horizontal.png?raw=true);
+                background-position: 0 center;
+            }
+
+            &:nth-child(4) {
+                background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/robot/vito_horizontal.png?raw=true);
+                background-position: 100% center;
+            }
+        }
+
     }
 }
