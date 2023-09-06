@@ -269,7 +269,7 @@
     &:nth-child(3){
         background-image: url(https://cio.com.tw/wp-content/uploads/1200-technology-5917370.jpg);
     }
-    @media (min-width: 768px) {
+    @include medium {
       height: 560px;
       padding-right: 40px;
     }
@@ -296,7 +296,7 @@
     }
   }
   
-  
+
 .line-camp-4 {
     overflow: hidden;
     text-overflow: ellipsis;
