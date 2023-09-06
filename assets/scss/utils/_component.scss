@@ -232,11 +232,13 @@
 }
 
 
+
 // swiper
+.overflow-init{
+    overflow: initial;
+}
 
 .swiper {
-    overflow: initial;
-
     &-slide {
         word-break: break-all;
     }
@@ -252,6 +254,49 @@
     background-color: gray;
 }
 
+.alphabox {
+    height: 351px;
+    background-size: cover;
+    background-position: center;
+    padding: 16px;
+
+    &:nth-child(1){
+        background-image: url(https://github.com/hd1313169/hex_fe_week8_2023/blob/main/assets/images/carousel.png?raw=true);
+    }
+    &:nth-child(2){
+        background-image: url(https://www.asmag.com.tw/upload/pic/case/42949.8646269.jpg);
+    }
+    &:nth-child(3){
+        background-image: url(https://cio.com.tw/wp-content/uploads/1200-technology-5917370.jpg);
+    }
+    @media (min-width: 768px) {
+      height: 560px;
+      padding-right: 40px;
+    }
+    
+    &-title {
+      letter-spacing: 24px;
+      @include medium {
+        letter-spacing: 32px;
+        margin-right: -32px;
+      }
+    }
+  }
+  
+  // 箭頭
+  .swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    position: initial;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    
+    &::after {
+      content: '';
+    }
+  }
+  
+  
 .line-camp-4 {
     overflow: hidden;
     text-overflow: ellipsis;

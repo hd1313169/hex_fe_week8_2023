@@ -22,9 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 
@@ -185,31 +183,62 @@
     </div>
 
     <div class="divide-2 mb-16 mb-md-32"></div>
-    <!-- <div class="container">
-      <div class="d-flex align-items-center">
-        <img src="../assets/images/line_start_arrow_notch.png" alt="arrow"
-          class="me-52 button-prev d-lg-block arrow-hover" style="width: 180px;">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide px-16 px-md-40 pt-160 pb-16 py-md-160 text-white position-relative">
-              <h3 class="title-display">01</h3>
-              <h4 class="mb-8 mb-md-16">立體投影技術</h4>
-              <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-            <div class="swiper-slide px-16 px-md-40 pt-160 pb-16 py-md-160 text-white position-relative">
-              <h3 class="title-display">02</h3>
-              <h4 class="mb-8 mb-md-16">立體投影技術</h4>
-              <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
-              <a href="#" class="stretched-link"></a>
+    <div class="container">
+      <!-- 輪播 -->
+      <div class="row align-items-center justify-content-between g-0">
+        <!--  左箭頭  -->
+        <div class="col-1 d-md-block">
+          <div class="swiper-button-prev">
+            <img src="../assets/images/line_start_arrow_notch.png" alt="left arrow" class="img-fluid">
+          </div>
+        </div>
+        <!--   Slides   -->
+        <div class="col-md-9 mt-16 mt-md-32 mb-32">
+          <div class="swiper alphaboxSwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide alphabox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                <div class="alphabox-intro text-white">
+                  <h3 class="fs-32 text-md-end mb-8 mb-md-16">
+                    <span class="title-display fs-96">01</span><br>
+                    <span class="alphabox-title">立體投影技術</span>
+                  </h3>
+                  <p class="">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide alphabox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                <div class="alphabox-intro text-white">
+                  <h3 class="fs-32 text-md-end mb-8 mb-md-16">
+                    <span class="title-display fs-96">02</span><br>
+                    <span class="alphabox-title">立體投影技術</span>
+                  </h3>
+                  <p class="">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide alphabox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                <div class="alphabox-intro text-white">
+                  <h3 class="fs-32 text-md-end mb-8 mb-md-16">
+                    <span class="title-display fs-96">03</span><br>
+                    <span class="alphabox-title">立體投影技術</span>
+                  </h3>
+                  <p class="">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <img src="../assets/images/line_end_arrow_notch.png" alt="arrow"
-          class="ms-52 button-next d-lg-block arrow-hover" style="width: 180px;">
+        <!--  右箭頭  -->
+        <div class="col-1 d-none d-md-block">
+          <div class="swiper-button-next">
+            <img src="../assets/images/line_end_arrow_notch.png" alt="right arrow" class="img-fluid">
+          </div>
+        </div>
       </div>
+
       <div class="w-100 bg-linear-right py-20 mt-32 mt-md-40"></div>
-    </div> -->
+    </div>
   </div>
 
   <!-- 最新消息 -->
@@ -328,7 +357,7 @@
 
       <!-- 電腦版 -->
       <div class="overflow-hidden d-md-block">
-        <div class="swiper shareSwiper">
+        <div class="swiper shareSwiper overflow-init">
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide p-md-40 bg-primary-dark text-white">
@@ -483,6 +512,29 @@
 
     <script type="module" src="../main.js"></script>
 
+    <!-- 介紹 Swiper -->
+    <script>
+      var alphaboxSwiper = new Swiper('.alphaboxSwiper', {
+        loop: false,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            autoplay: {
+              enabled: false,
+              delay: 1000,
+            }
+          }
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+    </script>
     <!-- 分享swiper -->
     <script>
       const swiper = new Swiper(".shareSwiper", {
